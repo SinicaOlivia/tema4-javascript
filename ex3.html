@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function letterCount(string, letter){                      /// 2 arguments
+    let total = 0                                         /// we start the counting from 0..we need to start from somewhere
+    string.split("").forEach(element => {                ///we will split what is in this string "" into a array of letters 
+        if ( element === letter){                       /// will going through each element ...counting the specific letter we want
+            total++
+        }
+    })
+    return total
+}
+let output = letterCount("Ana are Alune".toLowerCase(),"a")              ///transforming the upper case into lower case to count all
+let output2 = letterCount("Bananele sunt bune","b")
+let output3 = letterCount("La laguna limpede".toUpperCase(),"L")       ///transforming the lower case into upper to count all
+
+console.log(output)
+console.log(output2)                                                     ///result : how many time letter apears to string
+console.log(output3) 
+
+    </script>
+</body>
+</html>

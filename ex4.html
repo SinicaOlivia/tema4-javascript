@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ ///option 1
+function addNumber(x,y,z,w) {
+ return x + y + z + w;
+}
+console.log(addNumber(1,2,3,4))
+
+
+////option 2
+const numbers = [2, 4, 8, 10];
+
+const sum = numbers.reduce((accumulator, currentValue) => {  
+  return accumulator + currentValue;
+});
+
+console.log(sum);
+
+////option 3
+function addNumber(x,y,z) {
+ return x + y + z;
+}
+const number = [2, 4, 6]
+console.log(addNumber(...number))
+
+////option 4
+function sumOfAllNumbers(arrgument) {
+    return arrgument.reduce((accumulator, currentValue) =>
+                             accumulator + currentValue);
+}
+console.log(sumOfAllNumbers([1,2,3,4,5,20,70,-10]))
+
+    </script>
+</body>
+</html>
